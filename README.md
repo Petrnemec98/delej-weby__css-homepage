@@ -1,2 +1,2 @@
-# delej-weby__html-lekce
-HTML po lekci
+# Zdrojové HTML po první lekci
+
