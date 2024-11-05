@@ -49,42 +49,41 @@ p, a, span {
     text-transform: uppercase; /* Převede text na velká písmena */
 }
 
-/* Kontejnery */
-.container {
+/* Sekce */
+.section,
+header,
+footer {
     padding: 0 20px; /* zhora/spoda 0, zleva/zprava 20px */
     display: flex; /* Využíme pro pozicování Flexbox */
     justify-content: center; /* Zarovná obsah do středu */
     flex-direction: column; /* Srovná nám všechny prvky pod sebe */
 }
 
-.container.light {
+.section--light {
     background-color: var(--color-primary); /* Barva pozadí */
     color: var(--color-secondary); /* Barva textu */
 }
 
-.container.dark {
+.section--dark {
     background-color: var(--color-secondary); /* Barva pozadí */
     color: var(--color-primary); /* Barva textu */
 }
-.container.gray {
+.section--gray {
     background-color: var(--color-gray); /* Barva pozadí */
     color: var(--color-secondary); /* Barva textu */
 }
 
-/* Sekce */
-header,
-section{
-    max-width: 1240px;
-}
+/* container */
 
-section {
+.container {
     margin: 32px auto; /* Zarovná obsah do středu */
     display: flex;
     flex-direction: column;
     gap: 16px;
+    max-width: 1240px;
 }
 @media (min-width: 1024px) {
-    section{
+    .container{
         margin: 64px auto; /* Zarovná obsah do středu */
         gap: 32px;
     }
@@ -117,7 +116,7 @@ section {
 }
 
 /* Header */
-header {
+.container--header{
     height: 115px;
     display: flex;
     flex-direction: row;
@@ -230,7 +229,7 @@ header {
 }
 
 /* Footer */
-footer {
+.container--footer {
     height: 115px;
     display: flex;
     justify-content: center;
