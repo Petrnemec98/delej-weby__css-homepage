@@ -68,9 +68,15 @@ footer {
     background-color: var(--color-secondary); /* Barva pozadí */
     color: var(--color-primary); /* Barva textu */
 }
+
 .section--gray {
     background-color: var(--color-gray); /* Barva pozadí */
     color: var(--color-secondary); /* Barva textu */
+}
+
+.section--sticky {
+    position: sticky;
+    top: 0;
 }
 
 /* container */
@@ -154,10 +160,6 @@ footer {
     text-decoration: none;
 }
 
-.header--sticky {
-    position: sticky;
-    top: 0;
-}
 
 /* intro */
 .intro {
